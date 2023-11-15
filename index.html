@@ -1,0 +1,346 @@
+    <html>
+    <head>
+        <title>Tazkarty</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.css">
+        <link
+  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <style>
+            :root{ --main-color : rgb(2,83,16);}
+        </Style>
+    </head>
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="task.js"></script>
+        <header>
+            <a href="#Tazkarty" class="logo"> T<span>azkarty </span></a>   
+        <nav>
+<!-- <div>       
+<a href="#Tazkarty" class="logo"> T<span>azkarty </span></a>   
+</div> -->
+        <a href="#Home">Home </a>
+        <a href="#about"> About </a>
+        <a href="#stadiums"> Stadiums </a>
+        <a href="#Price"> Prices </a>
+        <a href="#contacts"> Contact</a>
+        </nav>
+    </header>
+
+        <div class="BallsContainer">
+        <div class="colorscont">
+            <div>
+               <i class='fas fa-cog'  id="icon"></i>
+           </div>
+           <span class="colorcontrol">
+           <div class="colors" id="red"></div>    
+           <div class="colors" id="blue"></div>    
+           <div class="colors" id="yellow"></div>    
+           <div class="colors" id="white"></div>
+           <div class="colors" id="orange"></div>
+           </span>
+   </div>
+   </div>
+           
+            <!-- <div>
+                 <i class='fas fa-cog'  style='font-size:36px; z-index:1000;'
+                 onclick="document.getElementsByClassName('red').style.visability='hidden'"></i> 
+            </div>
+            <i class='fas fa-cog'  id="icon"
+                 onclick="document.getElementsByClassName('red').style.visability='hidden'"></i> -->
+            
+            
+
+        <section id="Home">
+            <div class="sup">
+            <h2 class="support"><span style= color:var(--main-color);>SUPPORT</span> YOUR FAVOURITE CLUB</h2>
+            </div>
+            <div class="content1">
+                <img src="fans.jpg" class="image">
+            </div>
+        </section>
+        <section id="about" calss="about">
+            <h1 class="heading">ABOUT <span class="hh">US</span></h1>
+            <div class="about_content">
+                <div class="about_img" >
+                    <img src="about.jpeg" alt="" id="abt"/>
+                </div>
+                <div class="about_content2">
+                    <h3 class="ab_head">You will have a <Span style=" color:var(--main-color)">special  </Span>experience with us</h3>
+                    <p class="ab_par">
+                        We introduce you full experience of watching matches from the Transportation from your country
+                        to the Stadium and there are different tickets classes including VIP tickets and other classes
+                </p>
+                <a href="#contacts" class="btn">Contact us</a>
+                </div>
+            </div>
+        </div>
+            </section>
+         <!-- <section id="stadiums">
+            <h1 class="stad" style="align-items: center;">Best Stadiums we provide tickets for</h1>
+        <div class="stads">
+            <interact>
+                <div class = "forImages">
+                    <div class="image-container cont1">
+                        <a href="#England" id ="lab">Wembley</a>
+                        <img id="img" src="wembley_stadium.webp" width = "400px" >
+                    </div>
+                    <div class="image-container cont2">
+                        <a href="#Spain" id="lab" >Camp Nou</a>
+                        <img id="img" src="camp_nou.jpg" width = "400px">
+                </div>
+            </div>
+            <div class = "forImages">
+                <div class="image-container cont3">
+                    <a href="#Germany" id="lab"> Allianz Arena </a>
+                    <img id="img" src="Bayern.jpeg" width = "400px" >
+                </div>
+                <div class="image-container cont4">
+                    <a href="#Italy" id="lab"> San Siro </a><br>
+                    <img id="img" src="milan.jpeg" width = "400px" >
+                </div>
+            </div>
+            </interact>
+            </div>
+        </section>  -->
+        <!-- <div class="swiper">
+            Additional required wrapper 
+            <div class="swiper-wrapper">
+               Slides 
+              <div class="swiper-slide">
+                <img id="img" src="wembley_stadium.webp" width="100%" >
+                1</div>
+              <div class="swiper-slide">
+                <img id="img" src="camp_nou.jpg">
+                2</div>
+              <div class="swiper-slide">
+                <img id="img" src="milan.jpeg" >
+                3</div>
+              ...
+            </div>
+            <div class="swiper-pagination"></div>
+          
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          
+            <div class="swiper-scrollbar"></div>
+          </div> -->
+        <section id="stadiums">
+            <h1 class="stad" style="align-items: center;">Best Stadiums we provide tickets for</h1>
+        <div class="stad">
+        <div class="Slides">
+          <!-- Swiper -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img id="img" src="wembley_stadium.webp" width="100%" >
+              </div>
+              <div class="swiper-slide">
+                <img id="img" src="camp_nou.jpg">
+              </div>
+              <div class="swiper-slide">
+                <img id="img" src="milan.jpeg" >
+              </div>
+              <div class="swiper-slide">
+                <img id="img" src="Liverpool.jpg">
+              </div>
+              <div class="swiper-slide">
+                <img id="img" src="Cairo_stad.jpg">
+              </div>
+              <div class="swiper-slide">
+                <img id="img" src="Santiago.jpg">
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+          <!-- Swiper JS -->
+          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        
+          <!-- Initialize Swiper -->
+          <script>
+            var swiper = new Swiper(".mySwiper", {
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+              loop: true,
+              autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+    breakpoints: {
+      320:{
+        slidesPerView:1,
+        spaceBetween:20
+      },
+      480 :{
+        slidesPerView:2,
+        spaceBetween:5
+      },
+      640 :{
+        slidesPerView:3,
+        spaceBetween:10
+      },
+      800:{
+        slidesPerView:4,
+        spaceBetween:10
+      },
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      }
+    }
+            });
+
+
+            function changeme(){
+    var r = document.querySelector(':root');
+    r.style.setProperty('--main-color',Colors.get( this.id));
+}
+function drageMeRight(){
+    if(this.parentElement.parentElement.style.right == "0px"){
+       
+        this.parentElement.parentElement.style.right = "-220px"
+        // this.style.animationName = "none";
+    }
+    else{
+       
+        this.parentElement.parentElement.style.right = "0px"
+        // this.style.animationName = "rotate";
+    }
+}
+Array.from(document.getElementsByClassName("colorcontrol")).forEach(el=>el.addEventListener("click",changeme));
+
+document.getElementById("icon").addEventListener("click",drageMeRight)
+const Colors = new  Map();
+Colors.set("red", "#7b0d0b21");
+Colors.set("yellow", "#7b790b21");
+Colors.set("blue", "#0d0b7b21");
+Colors.set("white", "#0b7b1c21");
+Colors.set("Orange", "#7b450b21");
+
+          </script>
+ </div>
+</section> 
+          <!-- <script>
+            const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    loop: true,
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });
+
+          </script> -->
+
+<div>
+----
+</div>
+<div>
+    ----
+    </div>
+    <div>
+        ----
+        </div>
+            
+        <section id="Price"> 
+            <h2 class="heading">OUR<span style=" color:var(--main-color)"> PRICES </span>
+                 AND <span style= "color:var(--main-color)">SERVICES</span></h2>
+            <div class="container1">
+        <div class="box1">
+            <h3 class="title">VIP </h3>
+            <h3 class="price">800$</h3>
+            <li><i class="fa-solid fa-check" style="color: #00610b;"></i>Transportation </li>
+            <li><i class="fa-solid fa-check" style="color: #00610b;"></i>VIP seats </li>
+            <li><i class="fa-solid fa-check" style="color: #00610b;"></i>Snacks</li>
+            <li><i class="fa-solid fa-check" style="color: #00610b;"></i>Access to players lockers</li>
+            <a href="#price" class="btn">Check out</a>
+
+        </div>
+        <div class="box1">
+            <h3 class="title">First Class</h3>
+            <h3 class="price">500$</h3>
+            <li><i class="fa-solid fa-check" style="color: #00610b;"></i>Transportation </li>
+            <li><i class="fa-solid fa-check" style="color: #00610b;"></i>Snacks </li>
+            <li><i class="fa-solid fa-check" style="color: #00610b;"></i>Souviners </li>
+            <a href="#price" class="btn">Check out</a>
+        </div>
+        <div class="box1">
+            <h3 class="title">Second Class</h3>
+            <h3 class="price">300$</h3>
+            <li><i class="fa-solid fa-check" style="color: #00610b;"></i>Transportation </li>
+            <li><i class="fa-solid fa-check" style="color: #00610b;"></i> Souviners</li>
+           <span><a href="#price" class="btn">Check out</a></span>
+        </div>
+    </div> 
+    </section>
+        <section id="contacts" class="conatact">
+            <h1 class="heading">CONTACT<span class="hh"> US</span></h1>
+        <div>
+            <form class="fo">
+                <div class="input-box">
+                        <input class="inp" type="text" placeholder="Name">
+                        <input class="inp" type="email" placeholder="Email">
+                </div>
+                <div class="input-box">
+                    <input class="inp" type="text" placeholder="Number">
+                    <input class="inp" type="email" placeholder="Subject">
+            </div>
+            <textarea class="inp" placeholder="Your Message" id="msg" cols="30" rows="10"></textarea>
+            <a href="#contacts" class="btn">Send a message</a>
+            </form>
+        </div>
+        </section>
+
+        <section id="fot"></section>
+      <footer>
+        <div class="box_container">
+            <div>
+                    <h2>Branches</h2>
+                    <a href="#fot"><i class="fa-solid fa-location-dot"></i> Cairo</a>
+                    <a target="_blank" href="https://www.google.com/maps/place/Tazkrti+-+Ticket+Collection+Point+-+TOTAL+AFRICA+CUP+OF+NATIONS+EGYPT+2019/@29.9635639,32.5446662,17z/data=!3m1!4b1!4m6!3m5!1s0x14562582abd498ed:0xaa618706c13f7088!8m2!3d29.9635639!4d32.5446662!16s%2Fg%2F11h7d3vc7_?hl=en-EG&entry=ttu"><i class="fa-solid fa-location-dot"></i> Suez</a>
+                    <a href="#fot"><i class="fa-solid fa-location-dot"></i> Tanta</a>
+                    <a href="#fot"><i class="fa-solid fa-location-dot"></i> Giza</a>
+            </div>
+            <div>
+                <h2>Contact Info</h2>
+                <a href="#fot"><i class="fa-solid fa-phone"></i> 01207871173</a>
+                <a href="#fot"><i class="fa-solid fa-envelope"></i> ahmedyehya180@gmail.com</a>
+            </div>                 
+            <div>
+                <h2>Follow Us</h2>
+                    <a href="#fot"><i class="fa-brands fa-facebook"></i> Tazkarty</a>
+                    <a href="#fot"><i class="fa-brands fa-linkedin"></i> Tazkarty</a>
+                    <a href="#fot"><i class="fa-brands fa-instagram"></i> Tazkarty22</a>
+            </div>
+        </div>
+        <div class="credits">
+            <p>Created by Ahmed Nafea || <span class="rights">All rights reserved</span></p>
+        </div>
+      </footer>
+    </section>
+
+        </body>
+</html>
