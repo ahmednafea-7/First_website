@@ -15,9 +15,6 @@
         <header>
             <a href="#Tazkarty" class="logo"> T<span>azkarty </span></a>   
         <nav>
-<!-- <div>       
-<a href="#Tazkarty" class="logo"> T<span>azkarty </span></a>   
-</div> -->
         <a href="#Home">Home </a>
         <a href="#about"> About </a>
         <a href="#stadiums"> Stadiums </a>
@@ -28,7 +25,7 @@
 
         <div class="BallsContainer">
         <div class="colorscont">
-            <div>
+            <div class="icon">
                <i class='fas fa-cog'  id="icon"></i>
            </div>
            <span class="colorcontrol">
@@ -41,14 +38,6 @@
    </div>
    </div>
            
-            <!-- <div>
-                 <i class='fas fa-cog'  style='font-size:36px; z-index:1000;'
-                 onclick="document.getElementsByClassName('red').style.visability='hidden'"></i> 
-            </div>
-            <i class='fas fa-cog'  id="icon"
-                 onclick="document.getElementsByClassName('red').style.visability='hidden'"></i> -->
-            
-            
 
         <section id="Home">
             <div class="sup">
@@ -75,57 +64,9 @@
             </div>
         </div>
             </section>
-         <!-- <section id="stadiums">
-            <h1 class="stad" style="align-items: center;">Best Stadiums we provide tickets for</h1>
-        <div class="stads">
-            <interact>
-                <div class = "forImages">
-                    <div class="image-container cont1">
-                        <a href="#England" id ="lab">Wembley</a>
-                        <img id="img" src="wembley_stadium.webp" width = "400px" >
-                    </div>
-                    <div class="image-container cont2">
-                        <a href="#Spain" id="lab" >Camp Nou</a>
-                        <img id="img" src="camp_nou.jpg" width = "400px">
-                </div>
-            </div>
-            <div class = "forImages">
-                <div class="image-container cont3">
-                    <a href="#Germany" id="lab"> Allianz Arena </a>
-                    <img id="img" src="Bayern.jpeg" width = "400px" >
-                </div>
-                <div class="image-container cont4">
-                    <a href="#Italy" id="lab"> San Siro </a><br>
-                    <img id="img" src="milan.jpeg" width = "400px" >
-                </div>
-            </div>
-            </interact>
-            </div>
-        </section>  -->
-        <!-- <div class="swiper">
-            Additional required wrapper 
-            <div class="swiper-wrapper">
-               Slides 
-              <div class="swiper-slide">
-                <img id="img" src="wembley_stadium.webp" width="100%" >
-                1</div>
-              <div class="swiper-slide">
-                <img id="img" src="camp_nou.jpg">
-                2</div>
-              <div class="swiper-slide">
-                <img id="img" src="milan.jpeg" >
-                3</div>
-              ...
-            </div>
-            <div class="swiper-pagination"></div>
-          
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-          
-            <div class="swiper-scrollbar"></div>
-          </div> -->
+       
         <section id="stadiums">
-            <h1 class="stad" style="align-items: center;">Best Stadiums we provide tickets for</h1>
+            <h1 class="stad" style="align-items: center;">Best <span style= color:var(--main-color);> Stadiums </span>we provide tickets for</h1>
         <div class="stad">
         <div class="Slides">
           <!-- Swiper -->
@@ -154,10 +95,8 @@
             <div class="swiper-button-prev"></div>
           </div>
         </div>
-          <!-- Swiper JS -->
           <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         
-          <!-- Initialize Swiper -->
           <script>
             var swiper = new Swiper(".mySwiper", {
               navigation: {
@@ -200,23 +139,24 @@
         el: ".swiper-pagination",
       }
     }
-            });
+ });
 
-
-            function changeme(){
-    var r = document.querySelector(':root');
-    r.style.setProperty('--main-color',Colors.get( this.id));
+function changeme(){
+ var r = document.querySelector(':root');
+r.style.setProperty('--main-color',this.id);
 }
+document.getElementById("red").addEventListener("mousedown",changeme)
+document.getElementById("yellow").addEventListener("mousedown",changeme)
+document.getElementById("blue").addEventListener("mousedown",changeme)
+document.getElementById("white").addEventListener("mousedown",changeme)
+document.getElementById("orange").addEventListener("mousedown",changeme)
+
 function drageMeRight(){
     if(this.parentElement.parentElement.style.right == "0px"){
-       
         this.parentElement.parentElement.style.right = "-220px"
-        // this.style.animationName = "none";
     }
     else{
-       
         this.parentElement.parentElement.style.right = "0px"
-        // this.style.animationName = "rotate";
     }
 }
 Array.from(document.getElementsByClassName("colorcontrol")).forEach(el=>el.addEventListener("click",changeme));
@@ -232,39 +172,7 @@ Colors.set("Orange", "#7b450b21");
           </script>
  </div>
 </section> 
-          <!-- <script>
-            const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    loop: true,
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
-  });
 
-          </script> -->
-
-<div>
-----
-</div>
-<div>
-    ----
-    </div>
-    <div>
-        ----
-        </div>
-            
         <section id="Price"> 
             <h2 class="heading">OUR<span style=" color:var(--main-color)"> PRICES </span>
                  AND <span style= "color:var(--main-color)">SERVICES</span></h2>
@@ -272,26 +180,26 @@ Colors.set("Orange", "#7b450b21");
         <div class="box1">
             <h3 class="title">VIP </h3>
             <h3 class="price">800$</h3>
-            <li><i class="fa-solid fa-check" style="color: #00610b;"></i>Transportation </li>
-            <li><i class="fa-solid fa-check" style="color: #00610b;"></i>VIP seats </li>
-            <li><i class="fa-solid fa-check" style="color: #00610b;"></i>Snacks</li>
-            <li><i class="fa-solid fa-check" style="color: #00610b;"></i>Access to players lockers</li>
+            <li><i class="fa-solid fa-check" style="color: var(--main-color);"></i>Transportation </li>
+            <li><i class="fa-solid fa-check" style="color: var(--main-color);"></i>VIP seats </li>
+            <li><i class="fa-solid fa-check" style="color: var(--main-color);"></i>Snacks</li>
+            <li><i class="fa-solid fa-check" style="color: var(--main-color);"></i>Access to players lockers</li>
             <a href="#price" class="btn">Check out</a>
 
         </div>
         <div class="box1">
             <h3 class="title">First Class</h3>
             <h3 class="price">500$</h3>
-            <li><i class="fa-solid fa-check" style="color: #00610b;"></i>Transportation </li>
-            <li><i class="fa-solid fa-check" style="color: #00610b;"></i>Snacks </li>
-            <li><i class="fa-solid fa-check" style="color: #00610b;"></i>Souviners </li>
+            <li><i class="fa-solid fa-check" style="color: var(--main-color);"></i>Transportation </li>
+            <li><i class="fa-solid fa-check" style="color: var(--main-color);"></i>Snacks </li>
+            <li><i class="fa-solid fa-check" style="color: var(--main-color);"></i>Souviners </li>
             <a href="#price" class="btn">Check out</a>
         </div>
         <div class="box1">
             <h3 class="title">Second Class</h3>
             <h3 class="price">300$</h3>
-            <li><i class="fa-solid fa-check" style="color: #00610b;"></i>Transportation </li>
-            <li><i class="fa-solid fa-check" style="color: #00610b;"></i> Souviners</li>
+            <li><i class="fa-solid fa-check" style="color: var(--main-color);"></i>Transportation </li>
+            <li><i class="fa-solid fa-check" style="color: var(--main-color);"></i> Souviners</li>
            <span><a href="#price" class="btn">Check out</a></span>
         </div>
     </div> 
@@ -341,6 +249,5 @@ Colors.set("Orange", "#7b450b21");
         </div>
       </footer>
     </section>
-
-        </body>
+  </body>
 </html>
